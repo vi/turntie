@@ -2,6 +2,11 @@
 name = "turntie"
 version = "0.1.0"
 edition = "2021"
+repository = "https://github.com/vi/turntie"
+license = "MIT/Apache-2.0"
+description = "Library for creating simple communication channels using Mobility-enabled TURN servers. Like unreliable socketpair(2) for UDP."
+categories = ["network-programming", "command-line-utilities"]
+keywords = ["turn","channel","rfc8016","mobility","socketpair"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
