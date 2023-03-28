@@ -20,7 +20,7 @@ enum CmdEnum {
     Connect(Connect),
 }
 
-/// Create two allocation and return two specifier lines for their resumption
+/// Create two tied allocations and print two specifier lines for usage with 'turntie connect'.
 #[derive(FromArgs)]
 #[argh(subcommand, name = "tie")]
 struct Tie {
@@ -37,7 +37,7 @@ struct Tie {
     password: String,
 }
 
-/// Connect to one of the lines
+/// Connect to one of the endpoints created by 'turntie tie' and exchange stdin/stdout lines with the peer which connected to the other endpoint.
 #[derive(FromArgs)]
 #[argh(subcommand, name = "connect")]
 struct Connect {
